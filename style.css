@@ -1,0 +1,347 @@
+/* Defult Css */
+
+body,h1,h2,h3,h4,h5,h6{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/*  Header Start */
+
+.st-header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    z-index: 99;
+}
+.st-header .navbar-brand {
+	font-size: 20px;
+	font-weight: 500;
+}
+.navbar-brand span{
+    background: #6278DF;
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+    font-size: 25px;
+}
+.st-menu .nav-link {
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+/* slider Section */
+
+.slider-section{
+    background: url(img/mbr-10.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 200px 0;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.slider-section::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1d1e1f96;
+    z-index: -1;
+}
+.slider-caption{
+   
+}
+.slider-caption h4{
+    margin-bottom: 35px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.slider-caption h2{
+    margin-bottom: 50px;
+    font-size: 45px;
+    font-weight: 600;
+
+}
+.slider-caption button{
+    background: #4fb11a;
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+}
+.slider-caption button:hover{
+    background: white;
+    color: #6278DF;
+    border: 1px solid #6278DF;
+    transition: 0.5s;
+    box-shadow: 4px 10px 20px 5px #6278DF;
+}
+.slider-caption input{
+    padding: 15px;
+    border: 1px solid #5BA533;
+}
+
+/* About Section */
+.about-section{
+    background: #F7F9FF;
+}
+.about-section img{
+    max-width: 100%;
+}
+.about-caption{
+    margin-top: 120px;
+}
+.about-caption p{
+    font-weight: 400;
+}
+
+/* Feature Section */
+
+.feture-section{}
+.feture-section .fet-caption h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.feture-section .fet-caption h3{
+    font-weight: 300;
+}
+
+.fet-item{
+   height: 255px;
+   box-shadow: 4px 5px 30px 0 rgba(170, 153, 153, 0.212);
+}
+.fet-img-left{
+    width: 40%;
+    overflow: hidden;
+    border-radius: 5px 0 0 5px;
+}
+.fet-text-right{
+    width: 60%;
+    padding: 25px;
+}
+.fet-img-left img{
+    height: 100%;
+    width: auto!important;
+    max-width: inherit;
+    position: relative;
+    left: -70px;
+}
+
+/* Protfolio  */
+.prot-head h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.prot-item img{
+    max-width: 100%;
+}
+.prot-item{}
+.prot-item a{
+    position: relative;
+    display: block;
+}
+.prot-item a::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #2c4de07c;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+}
+.prot-item:hover a::after{
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Pric Section */
+.price-table{
+    background: #F7F9FF;
+}
+.price-head h1{
+    font-size: 60px;
+    padding-bottom: 20px;
+    font-weight: 400;
+}
+.price-head h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+.card-left{
+    background: #FFFFFF;
+    border-radius: 5px;
+}
+.card-left ul{
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+.card-left li{
+    font-size: 25px;
+    font-weight: 300;
+}
+.card-left li span{
+    display: inline-block;
+    width: 40px;
+}
+.card-left li span i{
+    color: #6278DF;
+}
+.card-left h1{
+    font-size: 40px;
+    font-weight: 600;
+}
+.card-left p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.price-btn{
+    
+}
+.price-btn .pr-bt{
+    border: none!important;
+    color: #6278DF !important;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 20px 30px;
+    box-shadow: 6px 6px 40px #8194ec4f;
+    transition: 1s;
+}
+.price-btn .pr-bt:hover{
+    background: #000 !important;
+    color: white !important;
+}
+.card-left:hover .pr-bt{
+    background: #6278DF;
+    color: white !important;
+    transition: 1s;
+}
+.card-left{
+    box-shadow: 4px 6px 30px rgba(153, 145, 145, 0.274);
+}
+/* Testemonial Section */
+.test-img{
+    width: 250px;
+    margin: 0 auto;
+}
+.test-img img{
+    width: 70px;
+    margin-right: 20px;
+}
+.test-text{
+    text-align: left;
+    position: relative;
+    top: 5px;
+}
+
+.test-section{}
+.test-section h4{
+    font-size: 30px;
+    font-weight: 300;
+}
+.test-section h2{
+    font-size: 40px;
+    font-weight: 400;
+}
+.test-section span{
+    color: #EFEFEF;
+    font-size: 80px;
+}
+.test-section p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.test-text p{
+    font-size: 15px;
+}
+
+
+/* About Section */
+.card img{
+    width: 110px;
+    margin-top: -60px;
+    margin-left: 20px;
+}
+.card p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.card a:hover{
+    background: #465052;
+    color: white;
+}
+.card a{
+    border-radius: 7px;
+}
+.ab-p{
+    font-size: 20px;
+    font-weight: 300;
+    
+}
+
+/* Contact Section */
+.cnt{
+    background: #6278DF;
+    color: white;
+    font-weight: 600;
+
+}
+.cnt:hover{
+    background: white;
+    color: #6278DF;
+    border: 2px solid #6278DF;
+    box-shadow: 4px 4px 10px #6278DF;
+}
+/* last section */
+.last-text{}
+.last-text h4{
+    font-size: 30px;
+    color: #7C7C7C;
+}
+.last-text h1{
+    font-size: 50px;
+    font-weight: 400;
+}
+.last-btn-1{
+    display: block;
+    background: white;
+    color: #5BA533;
+    border: 2px solid #5BA533 !important;
+    transition: 0.5s;
+    padding: 15px 20px;
+}
+.last-btn-2{
+    display: block;
+    background: #5BA533;
+    color: white;
+    box-shadow: 4px 4px 10px #5BA533;
+    padding: 15px 20px;
+
+}
+.last-btn-1 span{
+    margin-right: 10px;
+}
+.last-btn-1:hover{
+    background: #5BA533;
+    color: white;
+    box-shadow: 4px 4px 10px #5BA533 ;
+}
+.last-btn-2:hover{
+    background: #000000 !important;
+    color: white !important;
+    box-shadow: none;
+}
+/* Footer Section */
+.footer-section{
+    background: #F7F9FF;
+}
